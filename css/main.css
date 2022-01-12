@@ -1,0 +1,42 @@
+main {
+  flex-grow: 1;
+  flex-shrink: 1;
+  color: var(--secondary-color);
+}
+
+main section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+main article {
+  width: 50%;
+  margin: 0 3em;
+}
+
+main h2 {
+  font-size: 72px;
+  line-height: 89px;
+  color: black;
+}
+
+main .description {
+  margin: 2rem 0;
+}
+
+main a {
+  display: flex;
+  text-transform: uppercase;
+}
+
+main a p {
+  margin: 0 1.5rem;
+}
+
+.central-image {
+  position: absolute;
+  right: calc(33vw - 0.63 * 62vh / 2);
+  top: calc(45vh - 62% / 2);
+}
