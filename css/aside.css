@@ -1,0 +1,114 @@
+aside {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  height: 100vh;
+}
+
+aside .search-part {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  height: 86px;
+}
+
+aside .search-bar {
+  display: flex;
+  border-bottom: 2px black solid;
+  width: 52%;
+  margin: 0 3rem;
+  padding: 0.25rem 0;
+}
+
+aside .search-bar input {
+  background-color: transparent;
+  border: none;
+  padding: 0 1rem;
+  margin: 0;
+  color: white;
+  overflow: hidden;
+}
+
+aside .search-bar input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+aside .search-bar input:focus,
+aside .search-bar textarea:focus,
+aside .search-bar select:focus {
+  outline: none;
+}
+
+aside .cart {
+  text-align: center;
+  display: flex;
+}
+
+aside .cart::after {
+  content: '2';
+  display: block;
+  color: white;
+  border: 2px white solid;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+}
+
+aside section {
+  flex-grow: 1;
+  flex-shrink: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+aside .social {
+  display: flex;
+  flex-direction: row;
+  writing-mode: vertical-rl;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+
+aside .social ul {
+  display: flex;
+  flex-direction: column;
+  writing-mode: horizontal-tb;
+  list-style-type: none;
+  color: white;
+}
+
+aside .social-elt {
+  margin: 0.25rem 0;
+}
+
+aside .pagination {
+  height: 15vh;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+aside .pagination ul {
+  list-style-type: none;
+  display: flex;
+  color: #e5e5e5;
+}
+
+aside .pagination ul li {
+  margin: 0.5rem;
+}
+
+aside .pagination ul li:active {
+  color: black;
+}
+
+aside .pagination ul li::after {
+  display: block;
+  content: '.';
+}

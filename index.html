@@ -68,39 +68,50 @@
         </div>
       </footer>
     </div>
+
     <div class="right-side">
       <aside>
-        <div>
-          <div>
-            <img src="./assets/search_icon.svg" alt="Search icon" />
+        <div class="search-part">
+          <div class="search-bar">
+            <img
+              src="./assets/search_icon.svg"
+              alt="Search icon"
+              height="60%"
+            />
             <input type="text" placeholder="search" />
           </div>
 
-          <div>
-            <p>Cart</p>
-            <p>2</p>
-          </div>
+          <p class="cart"><a>Cart</a></p>
         </div>
 
         <section>
           <article></article>
 
-          <div>
-            <h2>Social</h2>
-            <hr />
+          <div class="social">
+            <h2 class="social-elt">Social</h2>
+            <img
+              class="social-elt"
+              src="./assets/line-white.svg"
+              alt="line"
+              width="1px"
+            />
             <ul>
-              <li>Fb</li>
-              <li>Ig</li>
-              <li>Tw</li>
+              <li class="social-elt">Fb</li>
+              <li class="social-elt">Ig</li>
+              <li class="social-elt">Tw</li>
             </ul>
           </div>
         </section>
 
-        <div>
+        <div class="pagination">
           <ul>
-            <li>01.</li>
-            <li>02.</li>
-            <li>03.</li>
+            <li class="page-link" onclick="handlePageClick(this)"><a>01</a></li>
+            <li class="page-link" onclick="handlePageClick(this)"><a>02</a></li>
+            <li class="page-link" onclick="handlePageClick(this)"><a>03</a></li>
+            <li class="page-link" onclick="handlePageClick(this)"><a>04</a></li>
+            <li class="page-link" onclick="handlePageClick(this)"><a>05</a></li>
+            <li class="page-link" onclick="handlePageClick(this)"><a>06</a></li>
+            <li class="page-link" onclick="handlePageClick(this)"><a>07</a></li>
           </ul>
         </div>
       </aside>
